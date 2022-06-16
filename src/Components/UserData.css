@@ -1,0 +1,152 @@
+.user-list {
+  font-size: 16px;
+  width: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.table-head {
+  text-align: left;
+}
+
+table,
+th,
+td {
+  border-bottom: 1px solid rgb(195, 191, 191);
+}
+
+.inputCheck-container {
+  display: flex;
+  align-items: center;
+}
+
+.inputCheck-container label {
+  cursor: pointer;
+  display: flex;
+}
+
+.inputCheck-container input[type="checkbox"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+.inputCheck-container label::before {
+  content: "";
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 0.15em;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
+  border: 0.05em solid rgb(149, 145, 145);
+}
+
+.inputCheck-container label:hover::before,
+.inputCheck-container input[type="checkbox"]:hover + label::before {
+  background-color: #dcdae1;
+}
+
+.inputCheck-container input[type="checkbox"]:disabled + label,
+.inputCheck-container input[type="checkbox"]:disabled {
+  color: #aaa;
+  cursor: default;
+}
+
+.inputCheck-container input[type="checkbox"]:checked + label::before {
+  content: "\002714";
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.inputCheck-container input[type="checkbox"]:disabled + label::before {
+  background-color: #ccc;
+  border-color: #999;
+}
+
+.save-button {
+  font-size: 16px;
+  width: 70px;
+  height: 30px;
+  color: white;
+  background-color: teal;
+  border: 1px solid teal;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 0.5rem 0 0 0;
+}
+
+.save-button:hover {
+  background-color: white;
+  color: teal;
+}
+
+.cancel-button {
+  font-size: 16px;
+  width: 70px;
+  height: 30px;
+  color: white;
+  background-color: rgb(229, 81, 81);
+  border: 1px solid rgb(229, 81, 81);
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.cancel-button:hover {
+  background-color: white;
+  color: rgb(229, 81, 81);
+}
+
+.edit-name,
+.edit-email,
+.edit-role {
+  padding: 0.5rem;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .save-button {
+    width: 3.5rem;
+    font-size: 12px;
+  }
+
+  .cancel-button {
+    width: 3.5rem;
+    font-size: 12px;
+  }
+
+  .mobile-action {
+    text-align: center;
+  }
+
+  .edit-name {
+    width: 6rem;
+    word-break: break-all;
+  }
+  .edit-email {
+    width: 10rem;
+    word-break: break-all;
+  }
+  .edit-role {
+    width: 5rem;
+    word-break: break-all;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .edit-name {
+    width: 4rem;
+    word-break: break-all;
+  }
+  .edit-email {
+    width: 6rem;
+    word-break: break-all;
+  }
+  .edit-role {
+    width: 3rem;
+    word-break: break-all;
+  }
+}

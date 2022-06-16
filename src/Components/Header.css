@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 5vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+
+.header-title {
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+  color: teal;
+}
+
+.input-bar {
+  margin: 0px 16px 16px 16px;
+}
+
+.search-bar {
+  font-size: 16px;
+  width: 100%;
+  height: 2rem;
+  border: 1px solid rgb(195, 191, 191);
+}
+
+.restore-button {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  color: #ffffff;
+  background-color: teal;
+  border: 1px solid teal;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.restore-button:hover {
+  color: teal;
+  background-color: #ffffff;
+}

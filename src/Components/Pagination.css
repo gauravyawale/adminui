@@ -1,0 +1,46 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-display {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  width: 2em;
+  height: 2em;
+  color: white;
+  background-color: teal;
+  border: 2px solid teal;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0.2em;
+}
+
+.pagination-display:hover {
+  color: teal;
+  background-color: white;
+}
+
+.pagination-display-selected {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  width: 2em;
+  height: 2em;
+  color: teal;
+  background-color: white;
+  border: 2px solid teal;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0.2em;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-page {
+    display: none;
+  }
+}
